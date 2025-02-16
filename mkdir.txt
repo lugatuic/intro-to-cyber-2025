@@ -1,0 +1,20 @@
+batman@batcomputer:~/enemies$ mkdir Bane
+batman@batcomputer:~/enemies$ ls -l
+total 0
+drwxrwxrwx 1 batman batman 4096 Jul 22 22:32  Bane
+
+# Quotes Matter
+batman@batcomputer:~/enemies$ mkdir Mad Hatter
+batman@batcomputer:~/enemies$ ls -l
+total 0
+drwxrwxrwx 1 batman batman 4096 Jul 22 22:32  Bane
+drwxrwxrwx 1 batman batman 4096 Jul 22 22:32  Hatter
+drwxrwxrwx 1 batman batman 4096 Jul 22 22:32  Mad
+# Use quotes to create folders with special characters
+batman@batcomputer:~/enemies$ mkdir "Mad Hatter"
+batman@batcomputer:~/enemies$ ls -l
+total 0
+drwxrwxrwx 1 batman batman 4096 Jul 22 22:32  Bane
+drwxrwxrwx 1 batman batman 4096 Jul 22 22:32  Hatter
+drwxrwxrwx 1 batman batman 4096 Jul 22 22:32  Mad
+drwxrwxrwx 1 batman batman 4096 Jul 22 22:32 'Mad Hatter'

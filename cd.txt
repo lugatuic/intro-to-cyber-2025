@@ -1,0 +1,18 @@
+batman@batcomputer:~$ cd enemies
+
+batman@batcomputer:~/enemies$ ls
+Bane      'Hugo     Strange'  'Jeremiah  Arkham'  'Mr.    Freeze'    Riddler
+'Carmine  Falcone'  Hush      Joker      'Mr.     Zsasz'  Scarecrow  
+Deadshot  'James    Gordon    Jr.'       'Killer  Croc'   Penguin    Two-Face
+'Harley   Quinn'    'Jason    Todd'                                  
+
+batman@batcomputer:~/enemies$ ls -l
+total 0
+drwxrwxrwx 1 batman batman 4096 Jul 22 22:27  Bane
+drwxrwxrwx 1 batman batman 4096 Jul 22 22:27 'Carmine Falcone'
+drwxrwxrwx 1 batman batman 4096 Jul 22 22:27  Deadshot
+drwxrwxrwx 1 batman batman 4096 Jul 22 22:27 'Harley Quinn'
+drwxrwxrwx 1 batman batman 4096 Jul 22 22:27 'Hugo Strange'
+drwxrwxrwx 1 batman batman 4096 Jul 22 22:27  Hush
+drwxrwxrwx 1 batman batman 4096 Jul 22 22:27 'James Gordon Jr.'
+...

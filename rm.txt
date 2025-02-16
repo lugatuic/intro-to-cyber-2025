@@ -1,0 +1,5 @@
+batman@batcomputer:~/enemies$ ls
+Hatter   Mad  'Mad Hatter'
+batman@batcomputer:~/enemies$ rm -r 'Mad Hatter'
+batman@batcomputer:~/enemies$ ls
+Hatter  Mad

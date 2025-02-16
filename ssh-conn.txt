@@ -1,0 +1,4 @@
+batman@laptop:~$ ssh user1@malware.cs.uic.edu
+Password for user1@lug-boat:
+Last login: Sun Jan 20 18:21:53 2019 from 131.129.46.66
+user1@lug-boat ~$

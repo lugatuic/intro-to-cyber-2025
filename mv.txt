@@ -1,0 +1,12 @@
+batman@batcomputer:~$ ls
+allies  enemies  hideFromAlfred  superSecretThings
+batman@batcomputer:~$ mv superSecretThings hideFromAlfred/
+batman@batcomputer:~$ ls hideFromAlfred/
+superSecretThings
+batman@batcomputer:~$ ls
+allies  enemies  hideFromAlfred
+#rename
+batman@batcomputer:~$ mv hideFromAlfred dontLookInside
+allies  enemies  hideFromAlfred
+batman@batcomputer:~$ ls
+allies  enemies  dontLookInside

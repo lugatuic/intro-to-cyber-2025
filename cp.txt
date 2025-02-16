@@ -1,0 +1,5 @@
+batman@batcomputer:~$ cp things otherStuff/
+batman@batcomputer:~$ ls
+allies  enemies  hideFromAlfred  otherStuff  things
+batman@batcomputer:~$ ls otherStuff/
+things

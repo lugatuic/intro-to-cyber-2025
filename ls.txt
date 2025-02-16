@@ -1,0 +1,10 @@
+batman@batcomputer:~$ ls
+allies  enemies  hideFromAlfred
+
+# List format [-l]
+
+batman@batcomputer:~$ ls -l
+total 0
+drwxrwxrwx 1 bmiddha bmiddha 4096 Jul 22 23:08 allies
+drwxrwxrwx 1 bmiddha bmiddha 4096 Jul 22 23:08 enemies
+drwxrwxrwx 1 bmiddha bmiddha 4096 Jul 22 23:08 hideFromAlfred
