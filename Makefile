@@ -1,10 +1,10 @@
-all: coreutils_and_filesystem.pdf coreutils_and_filesystem.handout.pdf
+all: intro-to-cyber.pdf intro-to-cyber.handout.pdf
 
-coreutils_and_filesystem.pdf: coreutils_and_filesystem.tex
+intro-to-cyber.pdf: intro-to-cyber.tex
 
-coreutils_and_filesystem.handout.pdf: coreutils_and_filesystem.handout.tex
+intro-to-cyber.handout.pdf: intro-to-cyber.handout.tex
 
-coreutils_and_filesystem.handout.tex: coreutils_and_filesystem.tex
+intro-to-cyber.handout.tex: intro-to-cyber.tex
 	sed '1s/\documentclass{beamer}/\documentclass[handout]{beamer}/' $^ > $@
 
 %.pdf: %.tex
@@ -12,7 +12,7 @@ coreutils_and_filesystem.handout.tex: coreutils_and_filesystem.tex
 
 clean:
 	latexmk -CA
-	rm -f coreutils_and_filesystem.handout.tex *.snm *.nav *.vrb *.pyg
+	rm -f intro-to-cyber.handout.tex *.snm *.nav *.vrb *.pyg
 	rm -rf _minted-*/ svg-inkscape/
 
 .PHONY: all clean
