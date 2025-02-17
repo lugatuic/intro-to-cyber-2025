@@ -40,11 +40,238 @@
 	\end{columns}
 \end{frame}
 
-\begin{frame}{What's Cybersecurity?}
-	stub
+\section{Hands-On Activity}
+\section{Filesystem}
+\begin{frame}{Why care?}
+	\begin{itemize}
+		\item Programs, configuration files, temp files, etc. are mostly
+			organized by a standard.
+			\pause
+
+		\item On *nix-like systems, most interaction with devices can be done
+			directly \underline{through the filesystem}.
+			\pause
+
+		\item On Linux? Try \texttt{cat /proc/cpuinfo} as an example!
+	\end{itemize}
 \end{frame}
 
-\section{Hands-On Activity}
+\begin{frame}{What's Cybersecurity?}
+	\begin{itemize}
+		\item It is the practice of protecting important information from digital threats.
+		\pause
+		
+		\item That important information can be anything but ranges from systems, networks, and personal data.
+		\pause
+		
+		\item How much information do \textbf{you} store online?
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Why Care?}
+	\begin{itemize}
+		\item Cybersecurity offers diverse career paths for those who are maybe looking for something a little different. 
+		\pause
+		\item As technology evolves more and more, so does the need for security. Which means... increased job opportunities.
+		
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Some real life examples...}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			During the PS3's run, hackers attacked Sony's Playstation Network (successfully!). This resulted in names, emails, passwords, and credit card information all being exposed. 
+			\pause
+			\begin{itemize}
+				\item PSN was then shut down for about a month, meaning no one could play online.
+				\pause
+				\item Speculated hacker groups were famously Anonymous or LulzSec but Sony never publicly identified. 
+				\pause
+				\item Cost Sony over \textbf{171 million dollars}
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics[width=0.7\linewidth]{Lulz_Security.svg}
+				\caption{LulzSec logo}
+				\label{fig:lulzsecurity}
+			\end{figure}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Some real life examples...}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			Just last year, Lurie's Children Hospital here in Chicago experienced a cyberattack. Sensitive information like: names, addresses, \textbf{Social Security Numbers}, medical records, etc. all got exposed.
+			\pause
+			\begin{itemize}
+				\item It's approximated over 791,784 patients had their data exposed. 
+				\pause
+				\item To fight against breach, the hospital had to shut down their online system. Resulted in significant delays and inconveniences for sick children.
+				\pause
+				\item Rhysida Ransomware claims they sold the data for \textbf{3.4 million dollars}
+				
+			\end{itemize}
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics[width=0.7\linewidth]{../rhysida}
+				\caption{Rhysida logo}
+				\label{fig:rhysida}
+			\end{figure}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Linux and Cybersecurity}
+	\begin{itemize}
+		\item Linux serves as a \textbf{foundation} and is an essential for many security-related tools.
+		\begin{itemize}
+			\item This means having Linux listed as a skill on your resume is a \textbf{must}.
+		\end{itemize}
+		\pause
+		\item Linux being open-source makes it more secure and customizable than Windows or macOS
+		\pause
+		\item Linux is more resistant to Malware than both Windows and macOS.
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}{Overview}
+	\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\begin{figure}
+				\centering
+				\includegraphics[width=\textwidth]{fhs.png}
+			\end{figure}
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			\begin{itemize}
+				\item The FS on Linux distros is defined by the Filesystem
+					Hierarchy Standard.
+					\pause
+
+				\item Does vary slightly depending on distro (some hate
+					following standards).
+					\pause
+
+				\item Root directory is the parent node of all other
+					directories/files on the system.
+					\pause
+
+				\item User programs are installed in varying locations within
+					the root filesystem.
+			\end{itemize}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+
+
+\begin{frame}
+	\begin{center}
+		\Huge How do we interact with the filesystem?
+	\end{center}
+\end{frame}
+
+\section{Coreutils}
+\begin{frame}{Table of Contents}
+	\tableofcontents[currentsection]
+\end{frame}
+
+\begin{frame}{Intro to Coreutils}
+	\begin{center}
+		\Huge What are coreutils?
+	\end{center}
+\end{frame}
+
+\begin{frame}{Common Examples}
+	\begin{columns}
+		\begin{column}{0.33\textwidth}
+			\begin{figure}
+				\centering
+				\caption{cat}
+				\includegraphics[width=0.7\textwidth]{cat.png}
+				\includegraphics[width=0.7\textwidth]{rm.png}
+				\caption{rm}
+			\end{figure}
+		\end{column}
+		\begin{column}{0.33\textwidth}
+			\begin{figure}
+				\centering
+				\caption{ls}
+				\includegraphics[width=0.7\textwidth]{ls.png}
+				\includegraphics[width=0.7\textwidth]{vi.png}
+				\caption{vi}
+			\end{figure}
+		\end{column}
+		\begin{column}{0.33\textwidth}
+			\begin{figure}
+				\centering
+				\caption{mkdir}
+				\includegraphics[width=0.7\textwidth]{mkdir.png}
+				\includegraphics[width=0.7\textwidth]{cd.png}
+				\caption{cd}
+			\end{figure}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+\begin{frame}{Intro to Coreutils}
+	\begin{itemize}
+		\item Coreutils are the basic file, shell, and text manipulation
+			utlities for a *nix-like operating system.
+			\pause
+
+		\item These programs are simple and user-interactable!
+			\pause
+
+		\item Defined by a standard called POSIX.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Intro to Coreutils}
+	\begin{itemize}
+		\item The GNU project was established in 1983 as a free software project
+			to build a complete operating system.
+			\pause
+
+		\item Nowadays, their version of the POSIX coreutils is the dominant
+			implementation used in Linux distributions.
+	\end{itemize}
+\end{frame}
+
+\begin{frame}{Structure of a Linux Command}
+	\begin{Large}
+		\textbf{Format} \\
+	\end{Large}
+	\texttt{\{command\} \{options/flags\} \{arguments\}}
+
+	\vspace{0.3cm}
+
+	\begin{Large}
+		\textbf{Example} \\
+	\end{Large}
+	\texttt{rm -r oldStuff}
+
+	\vspace{0.3cm}
+
+	\begin{tabular}{|c|c|}
+		\hline
+		Command & \texttt{rm} \\
+		\hline
+		Flags & \texttt{-r} \\
+		\hline
+		Arguments & \texttt{oldStuff} \\
+		\hline
+	\end{tabular}
+\end{frame}
+
+\section{Crash Course}
+>>>>>>> Stashed changes
 \begin{frame}{Table of Contents}
 	\tableofcontents[currentsection]
 \end{frame}
@@ -319,6 +546,32 @@
 	\begin{center}
 		\Huge Thank you!
 	\end{center}
+\end{frame}
+
+\begin{frame}{Closing Remarks}
+		\begin{columns}
+		\begin{column}{0.5\textwidth}
+			\textbf{Capture the Flame 2025}
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.7\linewidth]{../ctf}
+			\caption{}
+			\label{fig:ctf}
+		\end{figure}
+		\end{column}
+		\begin{column}{0.5\textwidth}
+			Please join WiCyS for UIC's first ever Capture the Flag event! A fun intercollegiate event tackling real cybersecurity challenges. You'll be able to team up with friends or other schools, meet professionals, and compete for fun prizes. 
+			
+			\bigskip
+			Join our Discord!
+			
+			\begin{figure}
+				\centering
+				\includesvg[width=0.5\textwidth]{lug-discord.svg}
+				\caption{\url{https://discord.gg/zTzy6JFmSF}}
+			\end{figure}
+		\end{column}
+	\end{columns}
 \end{frame}
 
 \begin{frame}{Closing Remarks}
