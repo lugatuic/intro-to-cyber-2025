@@ -1,0 +1,20 @@
+ewong25@lug-boat:~$ sudo netstat | tail -n 20
+unix  3      [ ]         DGRAM      CONNECTED     237928
+unix  3      [ ]         STREAM     CONNECTED     22879
+unix  2      [ ]         DGRAM      CONNECTED     246821
+unix  3      [ ]         DGRAM      CONNECTED     239928
+unix  3      [ ]         DGRAM      CONNECTED     237927
+unix  3      [ ]         STREAM     CONNECTED     19958
+unix  3      [ ]         STREAM     CONNECTED     20252    /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     14954
+unix  3      [ ]         STREAM     CONNECTED     239629   /run/systemd/journal/stdout
+unix  3      [ ]         STREAM     CONNECTED     234299
+unix  3      [ ]         STREAM     CONNECTED     234172   /run/dbus/system_bus_socket
+unix  3      [ ]         DGRAM      CONNECTED     20834
+unix  3      [ ]         STREAM     CONNECTED     240729
+unix  3      [ ]         DGRAM      CONNECTED     203781
+unix  2      [ ]         DGRAM      CONNECTED     237887
+unix  3      [ ]         STREAM     CONNECTED     236820
+unix  3      [ ]         STREAM     CONNECTED     23376    /run/dbus/system_bus_socket
+unix  3      [ ]         DGRAM      CONNECTED     236074
+unix  3      [ ]         STREAM     CONNECTED     237931

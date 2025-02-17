@@ -1,0 +1,5 @@
+aether@teyvat ~ $ whoami
+aether
+aether@teyvat ~ $ who
+aether   tty1         2025-02-16 00:40
+aether@teyvat ~ $

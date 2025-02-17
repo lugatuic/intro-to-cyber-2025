@@ -445,6 +445,17 @@
 	What does this mean?
 \end{frame}
 
+\begin{frame}{Users and Groups}
+	What are users and groups? A user is the account that you are logged
+	into on a Linux machine.
+	\pause
+
+	\begin{exampleblock}{Who am I?}
+		Use \texttt{whoami} and \texttt{who}!
+		\inputminted{shell-session}{whoami.txt}
+	\end{exampleblock}
+\end{frame}
+
 \begin{frame}{Permissions}
 	We can change permissions of a file \textit{or} directory with \texttt{chmod}.
 	\pause
@@ -482,6 +493,7 @@
 	\end{exampleblock}
 \end{frame}
 
+\subsection{Logging}
 \begin{frame}{Logs}
 	\pause
 	How is my system doing?
@@ -494,6 +506,50 @@
 	\begin{exampleblock}{\texttt{/var/log}}
 		\tiny\inputminted{shell-session}{varlog.txt}
 	\end{exampleblock}
+\end{frame}
+
+\begin{frame}{Binary Logs}
+	Some logs aren't in \texttt{/var/log}, some are managed by
+	\texttt{systemd}\footnote{system and service manager daemom}.
+	\pause
+
+	For example, to view the users who have logged in via \texttt{ssh}...
+
+	\begin{exampleblock}{\texttt{ssh}}
+		Use \texttt{journalctl}!
+
+		\bigskip
+
+		\texttt{sudo journalctl -u ssh}
+	\end{exampleblock}
+\end{frame}
+
+\subsection{Networking}
+\begin{frame}{Networking}
+	Most of the main attack vectors on a Linux machine are through the
+	network.
+	\pause
+
+	You can view all the current connections on the operating system using
+	\texttt{netstat}.
+	\pause
+
+	\begin{exampleblock}{Netstat}
+		\tiny\inputminted{shell-session}{netstat.txt}
+	\end{exampleblock}
+\end{frame}
+
+\begin{frame}{Networking}
+	To stop network and filter network connections, we use a
+	\textbf{firewall}. One such tool is \texttt{iptables}.
+	\pause
+
+	\begin{exampleblock}{iptables}
+		\tiny\inputminted{shell-session}{iptables.txt}
+	\end{exampleblock}
+	\pause
+
+	These are the current firewall rules on the machine!
 \end{frame}
 
 \begin{frame}{Closing Remarks}
