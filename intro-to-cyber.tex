@@ -367,7 +367,25 @@
 	\textit{I cheated...}
 	\pause
 
-	\inputminted{shell-session}{sudo.txt}
+	\begin{exampleblock}{sudo}
+		You can elevate to \texttt{root} permissions using
+		\texttt{sudo}!
+		\inputminted{shell-session}{sudo.txt}
+	\end{exampleblock}
+\end{frame}
+
+\begin{frame}{Logs}
+	\pause
+	How is my system doing?
+	\pause
+
+	You can view logs in \texttt{/var/log}, which is a folder containing
+	\underline{all logs}.
+	\pause
+
+	\begin{exampleblock}{\texttt{/var/log}}
+		\tiny\inputminted{shell-session}{varlog.txt}
+	\end{exampleblock}
 \end{frame}
 
 \begin{frame}{Closing Remarks}

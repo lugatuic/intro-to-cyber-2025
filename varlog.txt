@@ -1,0 +1,20 @@
+aether@teyvat /var/log $ ls -al
+total 4480
+drwxr-xr-x  1 root   root                240 Feb 16 00:39 .
+drwxr-xr-x  1 root   root                116 Feb 16 00:39 ..
+drwxr-xr-x  1 root   root                  0 Mar 21  2024 audit
+-rw-rw----  1 root   utmp               6528 Feb  3 20:36 btmp
+drwxr-xr-x  1 root   root                 38 Mar 21  2024 cups
+drwx--x--x  1 root   gdm                   0 Mar 21  2024 gdm
+-rw-r--r--  1 root   root            1589311 Jan 30 11:20 haskell-register.log
+drwxr-sr-x+ 1 root   systemd-journal      76 Mar 21  2024 journal
+-rw-rw-r--  1 root   utmp             292292 Feb  6 18:17 lastlog
+drwxr-xr-x  1 root   root                  0 Jan 19  2024 old
+-rw-r--r--  1 root   root            2219671 Feb 17 00:32 pacman.log
+drwxr-xr-x  1 passim passim               18 Jun 28  2024 passim
+drwx------  1 root   root                  0 Mar 21  2024 private
+lrwxrwxrwx  1 root   root                 39 Dec 21 04:28 README -> ../../usr/share/doc/systemd/README.logs
+-rw-rw-r--  1 root   utmp             529152 Feb 16 00:40 wtmp
+-rw-r--r--  1 root   root              64141 Feb 17 00:01 Xorg.0.log
+-rw-r--r--  1 root   root             106890 Feb 16 00:39 Xorg.0.log.old
+-rw-r--r--  1 root   root              43467 Oct 23 09:33 Xorg.2.log
