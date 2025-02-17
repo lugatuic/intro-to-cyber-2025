@@ -1,0 +1,15 @@
+aether@teyvat ~/Videos $ ls -al
+total 31496
+drwxr-xr-x 1 aether aether       98 Sep 30 00:20 .
+drwx------ 1 aether aether      882 Feb 17 02:45 ..
+-rw-r--r-- 1 aether aether 26131919 Aug 17  2024 addressing_your_concerns.mp4
+drwxr-xr-x 1 aether aether        0 Sep 30 00:20 Screencasts
+-rw------- 1 aether aether  6115622 Mar 25  2024 vibe_2.mov
+aether@teyvat ~/Videos $ chown root:root vibe_2.mov
+aether@teyvat ~/Videos $ ls -al
+total 31496
+drwxr-xr-x 1 aether aether       98 Sep 30 00:20 .
+drwx------ 1 aether aether      882 Feb 17 02:45 ..
+-rw-r--r-- 1 aether aether 26131919 Aug 17  2024 addressing_your_concerns.mp4
+drwxr-xr-x 1 aether aether        0 Sep 30 00:20 Screencasts
+-rw------- 1 root   root    6115622 Mar 25  2024 vibe_2.mov

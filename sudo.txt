@@ -1,0 +1,5 @@
+aether@teyvat ~/Videos $ chown root:root vibe_2.mov
+chown: changing ownership of 'vibe_2.mov': Operation not permitted
+aether@teyvat ~/Videos $ sudo !!
+sudo chown root:root vibe_2.mov
+[sudo] password for aether:

@@ -274,45 +274,100 @@
 	\tiny\inputminted{shell-session}{man.txt}
 \end{frame}
 
-\begin{frame}{ls}
-	\inputminted{shell-session}{ls.txt}
-\end{frame}
-
-\begin{frame}{cd}
-	\tiny\inputminted{shell-session}{cd.txt}
-\end{frame}
-
-\begin{frame}{mkdir}
-	\tiny\inputminted{shell-session}{mkdir.txt}
-\end{frame}
-
-\begin{frame}{rm}
-	\inputminted{shell-session}{rm.txt}
-\end{frame}
-
-\begin{frame}{pwd}
-	\inputminted{shell-session}{pwd.txt}
-\end{frame}
-
-\begin{frame}{mv}
-	\inputminted{shell-session}{mv.txt}
-\end{frame}
-
-\begin{frame}{cp}
-	\inputminted{shell-session}{cp.txt}
-\end{frame}
-
-\begin{frame}{cat}
-	\inputminted{shell-session}{cat.txt}
-\end{frame}
+%\begin{frame}{ls}
+%	\inputminted{shell-session}{ls.txt}
+%\end{frame}
+%
+%\begin{frame}{cd}
+%	\tiny\inputminted{shell-session}{cd.txt}
+%\end{frame}
+%
+%\begin{frame}{mkdir}
+%	\tiny\inputminted{shell-session}{mkdir.txt}
+%\end{frame}
+%
+%\begin{frame}{rm}
+%	\inputminted{shell-session}{rm.txt}
+%\end{frame}
+%
+%\begin{frame}{pwd}
+%	\inputminted{shell-session}{pwd.txt}
+%\end{frame}
+%
+%\begin{frame}{mv}
+%	\inputminted{shell-session}{mv.txt}
+%\end{frame}
+%
+%\begin{frame}{cp}
+%	\inputminted{shell-session}{cp.txt}
+%\end{frame}
+%
+%\begin{frame}{cat}
+%	\inputminted{shell-session}{cat.txt}
+%\end{frame}
 
 \section{Cybersecurity Commands}
 \begin{frame}{Table of Contents}
 	\tableofcontents[currentsection]
 \end{frame}
 
-\begin{frame}
-	insert cybersec stuff here
+\subsection{Permissions}
+\begin{frame}{Permissions}
+	In Linux, all files are \underline{owned} by a \textit{user} and a
+	\textit{group}.
+	\pause
+
+	\begin{exampleblock}{ls output}
+		\inputminted{shell-session}{lsal.txt}
+	\end{exampleblock}
+	\pause
+
+	Permissions can be listed with \texttt{ls -al}.
+\end{frame}
+
+\begin{frame}{Permissions}
+	Permissions are \textbf{important} because they safegard
+	\textit{unauthorized users} from accessing data.
+	\pause
+
+	\vspace{0.3cm}
+
+	\texttt{-rw-r--r-- 1 aether aether  6115622 Mar 25  2024 vibe\_2.mov}
+
+	What does this mean?
+\end{frame}
+
+\begin{frame}{Permissions}
+	We can change permissions of a file \textit{or} directory with \texttt{chmod}.
+	\pause
+
+	\tiny\inputminted{shell-session}{chmod.txt}
+\end{frame}
+
+\begin{frame}{Permissions}
+	We can also change who \textbf{owns} a file with \texttt{chown}.
+	\pause
+
+	\tiny\inputminted{shell-session}{chown.txt}
+	\pause
+
+	\begin{center}
+		\Large Try this!
+	\end{center}
+\end{frame}
+
+\begin{frame}{Elevating Permissions}
+	This didn't work because only the \texttt{root} user\footnote{the user
+	with highest permissions in Linux} can change ownership to
+	\texttt{root}.
+	\pause
+
+	\vspace{0.3cm}
+
+	\textit{I cheated...}
+	\pause
+
+	\inputminted{shell-session}{sudo.txt}
 \end{frame}
 
 \begin{frame}{Closing Remarks}
