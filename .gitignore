@@ -9,6 +9,7 @@
 *.vrb
 *.pyg
 *.fdb_latexmk
+*.md
 
 *.handout.tex
 
